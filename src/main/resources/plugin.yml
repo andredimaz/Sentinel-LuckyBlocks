@@ -1,0 +1,4 @@
+name: Sentinel-LuckyBlocks
+version: '${project.version}'
+main: github.andredimaz.plugin.luckyblocks.Main
+authors: [ dimaz ]
