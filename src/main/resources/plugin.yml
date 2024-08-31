@@ -2,3 +2,6 @@ name: Sentinel-LuckyBlocks
 version: '${project.version}'
 main: github.andredimaz.plugin.luckyblocks.Main
 authors: [ dimaz ]
+commands:
+  luckyblocks:
+    description: 'Comandos do plugin LuckyBlocks'

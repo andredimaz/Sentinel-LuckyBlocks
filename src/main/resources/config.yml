@@ -1,0 +1,6 @@
+rarities:
+  common: #ALL THE TEXTS ARE BROADCASTED, LEAVE EMPTY TO NOT USE.
+    title: '{player} received <nl> {quantity} {reward}'
+    actionbar: '{player} received {quantity} {reward}'
+    broadcast: '&e{player} &freceived &b{quantity} {reward}'
+
