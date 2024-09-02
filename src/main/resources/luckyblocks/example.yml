@@ -9,37 +9,12 @@ item:
     - ''
     - '&ePlace to open.'
 
-animation:
+hologram:
   placed-animation:
-    duration: 5 #In seconds
-    rotation:
-      increment: 0.5 #Speeds up the rotation animation
-      speed: 5 #speed of the rotation animation
-    floating:
-      amplitude: 0 #the distance the head will go up and down from the main point
-      speed: 0 #speed of the floating animation
-
-    hologram:
-      height: 1.5
-      lines:
-        - '&fCommon &bLucky Block'
-        - '&eopening in {time}' #{time} or {dots}. {dots} display a ., .., ... animation instead of using time
-
-  reward-animation:
-    duration: 3
-    rotation:
-      increment: 0
-      speed: 0
-    floating:
-      amplitude: 0.5
-      speed: 0.15
-
-    hologram:
-      height: 2
-      lines:
-        - '&fCommon &bLucky Block'
-        - '&e{reward}'
-        - '{item}'
+    height: 1.5
+    lines:
+      - '&fCommon &bLucky Block'
+      - '&eopening in {time}' #{time} or {dots}. {dots} display a ., .., ... animation instead of using time
 
 rewards:
   '10,reward1,common,13' #chance, reward, rarity, slot

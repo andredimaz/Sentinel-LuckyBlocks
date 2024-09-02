@@ -2,9 +2,11 @@ package github.andredimaz.plugin.luckyblocks;
 
 import github.andredimaz.plugin.luckyblocks.commands.LuckyBlocksCommand;
 import github.andredimaz.plugin.luckyblocks.listeners.OnPlace;
+import github.andredimaz.plugin.luckyblocks.utils.ASAnimation;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -12,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class Main extends JavaPlugin {
+    private ASAnimation armorstand;
 
     private Map<String, FileConfiguration> lbConfigs = new HashMap<>();
 
@@ -27,7 +30,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Lógica de desligamento do plugin
+
     }
 
     public void loadLuckyBlocks() {

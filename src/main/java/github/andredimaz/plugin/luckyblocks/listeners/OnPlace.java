@@ -3,8 +3,9 @@ package github.andredimaz.plugin.luckyblocks.listeners;
 import github.andredimaz.plugin.core.utils.basics.PacketAS;
 import github.andredimaz.plugin.core.utils.objects.ItemBuilder;
 import github.andredimaz.plugin.luckyblocks.Main;
-import github.andredimaz.plugin.luckyblocks.utils.PacketArmorStand;
+import github.andredimaz.plugin.luckyblocks.utils.ASAnimation;
 import net.minecraft.server.v1_8_R3.PacketPlayOutNamedSoundEffect;
+import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -14,11 +15,11 @@ import org.bukkit.inventory.ItemStack;
 public class OnPlace implements Listener {
 
     private final Main plugin;
-    private final PacketArmorStand armorstand;
+    private final ASAnimation armorstand;
 
     public OnPlace(Main plugin) {
         this.plugin = plugin;
-        this.armorstand = new PacketArmorStand(plugin);
+        this.armorstand = new ASAnimation(plugin);
     }
 
     @EventHandler
@@ -37,8 +38,7 @@ public class OnPlace implements Listener {
                     amount--;
                     itemBuilder.addNBT("luckyblock_amount", amount);
 
-                    String[] hologramLines = {"§eLucky Block", "§fopening..."};
-                    armorstand.placeAnimation(event.getPlayer(), event.getBlockPlaced().getLocation().add(0.5, -1.0, 0.5), item, 5.0, 0.5, 5, 0.015, hologramLines);
+                    armorstand.placeAnim(event.getPlayer(), event.getBlockPlaced().getLocation().add(0.5, -1.0, 0.5), item, 5.0, 0.5, 5, 0.015);
 
 
                     if (itemBuilder.getLore() != null) {
