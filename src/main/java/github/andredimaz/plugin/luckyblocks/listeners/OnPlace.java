@@ -1,12 +1,8 @@
 package github.andredimaz.plugin.luckyblocks.listeners;
 
-import github.andredimaz.plugin.core.utils.basics.PacketAS;
 import github.andredimaz.plugin.core.utils.objects.ItemBuilder;
 import github.andredimaz.plugin.luckyblocks.Main;
 import github.andredimaz.plugin.luckyblocks.utils.ASAnimation;
-import net.minecraft.server.v1_8_R3.PacketPlayOutNamedSoundEffect;
-import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
